@@ -1,0 +1,98 @@
+body,
+h1,
+h2,
+h3,
+ul,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+h1,
+h2 {
+  font-size: inherit;
+  font-weight: normal;
+}
+
+/* layout */
+.wrapper {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+.header,
+.main {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.title {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.sub-title {
+  margin-top: 10px;
+}
+
+.character-list {
+  margin-top: 30px;
+}
+
+.character-list-item {
+  padding: 15px;
+}
+
+/* contents */
+.title {
+  color: dodgerblue;
+  vertical-align: center;
+  font-size: 50px;
+  font-weight: 700;
+  font-style: italic;
+  font-family: serif;
+  border-bottom: 5px solid;
+}
+.sub-title {
+  text-align: right;
+  font-style: italic;
+}
+
+.main-image {
+  width: 70%;
+  border-radius: 20px;
+  box-shadow: 10px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.character-list {
+  display: flex;
+  gap: 20px;
+}
+
+/* 해당 요소 너비를 컨텐츠에 상관 없이 일정하게 조정하고 싶은데 고정 값 쓰지 않고 하는 방법이 있을까요? */
+.character-list-item {
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.1);
+  word-break: keep-all;
+}
+
+.list-item-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.list-item-name {
+  margin: 20px 0;
+  font-size: 25px;
+}
+
+.list-item-description {
+  color: grey;
+  font-size: 14px;
+}
